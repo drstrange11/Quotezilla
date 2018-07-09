@@ -72,17 +72,17 @@ def animate():
         time.sleep(0.1)
         i += 1
 
-        if i == 150:
+        if i == 150: #This is just to compensate the waiting time 
             sys.stdout.write("\rLoaded successfully!")
             break
 
-
-print("\nWELCOME TO QUOTEZILLA!!  :P ")
-print("\nShall we start playing? (Y/N)")
-if(input().lower() in ['yes', 'yeah', 'y']):
-    print("\nPlease wait. Getting things ready for you.\n")
-    animate()
-    scrape()
-    play_game()
-else:
-    print("Ohh Okay :( . See ya again next time!")
+if __name__ == "__main__":
+    print("\nWELCOME TO QUOTEZILLA!!  :P ")
+    print("\nShall we start playing? (Y/N)")
+    if(input().lower() in ['yes', 'yeah', 'y']):
+        print("\nPlease wait. Getting things ready for you.\n")
+        animate()
+        scrape()
+        play_game()
+    else:
+        print("Ohh Okay :( . See ya again next time!")
