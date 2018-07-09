@@ -8,6 +8,7 @@ import time
 all_quotes = []
 BASE_URL = "http://quotes.toscrape.com"
 
+#Scrapes the title, author and the about author page
 
 def scrape():
     url = "/page/1"
@@ -63,7 +64,7 @@ def play_game():
         print("\nHere we go again.....")
         return play_game()
 
-
+#Load Screen
 def animate():
     i = 1
     for c in itertools.cycle(['|', '/', '-', '\\']):
